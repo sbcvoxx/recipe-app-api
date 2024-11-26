@@ -1,9 +1,9 @@
 """
 URL mappings for the recipe app
 """
-from django.urls import path, include # type: ignore
+from django.urls import path, include   # type: ignore
 
-from rest_framework.routers import DefaultRouter # type: ignore
+from rest_framework.routers import DefaultRouter    # type: ignore
 
 from recipe import views
 
@@ -17,4 +17,3 @@ app_name = 'recipe'
 urlpatterns = [
     path('', include(router.urls)),
 ]
-
